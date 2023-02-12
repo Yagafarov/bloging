@@ -319,13 +319,18 @@ main {
   border: 0;
   display: inherit;
   opacity: 0;
-  min-width: 9rem;
+  min-width: 12rem;
   margin-top: 20px;
   padding: 13px 0 10px 0;
   transition: all 0.3s;
   pointer-events: none;
 }
-
+@media screen and (max-width:768px) {
+  .dropdown-menu{
+    background: var(--custom-btn-bg-hover-color);
+  }
+  
+}
 .navbar .dropdown-menu::before {
   content: "";
   width: 0;
@@ -1084,6 +1089,12 @@ main {
     display: block;
     margin: 20px 0;
     text-align: center;
+  }
+   .collapse{
+    background-color: var(--custom-btn-bg-hover-color);
+    margin-bottom: 20px;
+    z-index: 1;
+    padding-bottom: 20px;
   }
 }
 /*---------------------------------------
