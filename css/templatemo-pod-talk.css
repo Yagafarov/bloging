@@ -1069,7 +1069,23 @@ main {
   line-height: inherit;
 }
 
-
+@media screen and (max-width:768px) {
+  .subscribe-form-wrap{
+    width: 100%;
+  }
+  .site-footer-title,.social-icon,.site-footer-links{
+    width: 100%;
+    text-align: center;
+  }
+  .site-footer-link-item{
+    display: block;
+  }
+  .navbar-brand{
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+  }
+}
 /*---------------------------------------
   SOCIAL ICON               
 -----------------------------------------*/
