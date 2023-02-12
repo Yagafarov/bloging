@@ -1080,15 +1080,16 @@ main {
   }
   .site-footer-title,.social-icon,.site-footer-links{
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
   .site-footer-link-item{
     display: block;
+    text-align: center;
   }
   .navbar-brand{
-    display: block;
     margin: 20px 0;
     text-align: center;
+    width: 100%;
   }
    .collapse{
     background-color: var(--custom-btn-bg-hover-color);
