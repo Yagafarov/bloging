@@ -58,9 +58,22 @@ api.open('GET','https://samnurasia.uz/api/?format=json',true);
 api.onload = function () {
   let data =JSON.parse( this.response );
   data.forEach(e => {
-    // document.querySelector('.api-title').textContent = e.title;
-    // document.querySelector('.api-desc').textContent = e.description;
-    // document.querySelector('.bi-download').href = e.file;
+    if(data.length == e.id){
+      document.getElementById('title1').textContent = e.title;
+      document.getElementById('name1').textContent = e.post_uploader.first_name +" " +e.post_uploader.last_name;
+      document.getElementById('disc1').textContent = e.description;
+    }
+    if(data.length-1 == e.id){
+      document.getElementById('title2').textContent = e.title;
+      document.getElementById('name2').textContent = e.post_uploader.first_name +" " +e.post_uploader.last_name;
+      document.getElementById('disc2').textContent = e.description;
+    }
+    if(data.length-3 == e.id){
+      document.getElementById('title3').textContent = e.title;
+      document.getElementById('name3').textContent = e.post_uploader.first_name +" " +e.post_uploader.last_name;
+      document.getElementById('disc3').textContent = e.description;
+    }
+    // *********************************************
     let div = document.createElement('div');
     div.setAttribute('class','col-lg-6 col-12 mb-4 mb-lg-0 my-3')
     wrap.appendChild(div);
