@@ -63,12 +63,12 @@ api.onload = function () {
       document.getElementById('name1').textContent = e.post_uploader.first_name +" " +e.post_uploader.last_name;
       document.getElementById('disc1').textContent = e.description;
     }
-    if(data.length-1 == e.id){
+    if(data.length-3 == e.id){
       document.getElementById('title2').textContent = e.title;
       document.getElementById('name2').textContent = e.post_uploader.first_name +" " +e.post_uploader.last_name;
       document.getElementById('disc2').textContent = e.description;
     }
-    if(data.length-3 == e.id){
+    if(data.length-4 == e.id){
       document.getElementById('title3').textContent = e.title;
       document.getElementById('name3').textContent = e.post_uploader.first_name +" " +e.post_uploader.last_name;
       document.getElementById('disc3').textContent = e.description;
